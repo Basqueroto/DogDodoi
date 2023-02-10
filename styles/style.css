@@ -358,3 +358,14 @@ main #login-form #retorno-button button:hover, .form-log-button button:hover{
     font-size: 22px;
     cursor: pointer;
 }
+/* -----------------------------------------Dashboard--------------------------------------------- */
+main #dash-menu{
+    position: absolute;
+    width: 321px;
+    height: 726px;
+    left: 0px;
+    top: 73px;
+    background-color: var(--cor-topo);
+}
+
+main #dash-menu .dash-board-button-class
