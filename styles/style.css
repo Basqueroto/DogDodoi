@@ -362,70 +362,12 @@ main #login-form #retorno-button button:hover, .form-log-button button:hover{
 #header {
     position: relative;
 }
-main{
-    height: calc(100vh - 73px);
+
+#header #exit #login{
+    width: 74px;
+    height: 33px;
+    left: 1156px;
 }
-
-main #dash-menu #dash-menu-button button{
-    width: 288px;
-    height: 54px;
-    border-radius: 20px;
-    background-color: var(--cor-principal);
-    color: var(--cor-branca);
-}
-
-main  #dash-board{
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 73px;
-    background-color: black; 
-    padding: 20px;
-    align-items: flex-start; */
-
-}
-
-main  #dash-board div {
-    width: calc(100% - 30px);
-    margin: 15px;
-}
-
-main  #dash-board #dash-board-cad-client{
-    background-color: #EA1C81;
-    height: 161px;
-}
-
-main  #dash-board #dash-board-cad-user{
-    background-color: antiquewhite;
-    width: 440px;
-    height: 161px;
-}
-
-main  #dash-board #dash-board-cad-consult{
-    background-color: aqua;
-    width: 440px;
-    height: 161px;
-}
-
-main  #dash-board #dash-board-cad-cancel{
-    background-color: bisque;
-    width: 440px;
-    height: 161px;
-}
-
-/* 
-main
-
-
-
-
-AGORA VAI
-
-
-
-
-
-*/
-
 .dashboard {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -433,17 +375,34 @@ AGORA VAI
 }
 
 .menu {
+    padding-top: 13px;
     width: 321px;
     height: 100vh;
     background-color: var(--cor-topo);
+    display: flex;
+    flex-direction: column;
 }
-
+/* menu laterla */
 .menu a{
-        width: 288px;
-    height: 54px;
+    padding-top: 10px;
+    margin-left: 15px;
+   text-decoration: none;
+   text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+
+    width: 288px;
+    height: 44px;
+    left: 15px;
+    top: 13px;
     border-radius: 20px;
     background-color: var(--cor-principal);
     color: var(--cor-branca);
+    margin-bottom: 16px;
 } 
 
 .dashboard .dash {
@@ -451,17 +410,15 @@ AGORA VAI
 }
 
 .dashboard .dash div {
-    background-color: rgb(255, 255, 255);
     width: calc(48% - 40px);
     display: inline-block;
     margin: 20px;
     padding: 30px;
-    color: wheat;
+    background-color: var(--cor-topo);
+    color: var(--cor-principal);
+
+    border: var(--cor-principal);
+    border-radius: 20px;
+
 }
 
-    main .dashboard .menu{
-        padding-left: 100px;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        padding-right: 12px     ;
-    }
