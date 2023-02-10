@@ -1,0 +1,360 @@
+/* criação de variáveis */
+
+:root{
+    --cor-principal: #EA1C81;
+    --cor-topo: #D8F1FB;
+    --cor-preta: black;
+    --cor-branca: white;
+    --cor-text-azul: #424E66;
+    --cor-azul-claro: #FAFBFF;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    transition: all 0.5s;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+main #form #form-texto, footer{
+    text-align: center;
+}
+
+#header{
+    /* cor de fundo */
+    background-color: var(--cor-topo);
+    display: flex;
+    /* joga o display para os cantos */
+    justify-content: space-between;
+    padding: 20px;
+    /* centraliza os itens dentro do display */
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 73px;
+    left: 0px;
+    top: 0px;
+}
+/* modo cascata invoca-se o pai depois o próximo pai e ent o filho*/
+#header nav a{
+    text-decoration: none;
+    color: var(--cor-preta);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+#header nav a:hover{
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 40px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.marginLateral{
+    margin: 0px 20px;
+}
+
+main #banner{
+    background-image: url("../image/Banner.png");
+    height: calc(100vh - 116px);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-principal);
+}
+
+main #banner button{
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border: none;
+    border-radius: 40px;
+    margin: 10px;
+}
+main #banner h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}   
+
+main #banner p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.065em;
+    color: var(--cor-text-azul);
+}
+
+main #banner button:hover{
+    padding: 15px;
+    color: var(--cor-branca);
+    border-radius: 100px;
+    font-size: 14px;
+    cursor: pointer;
+}
+main #banner button, #header nav a:hover, #bemVindo-boasvindas div {
+    padding: 15px;
+}
+/* -------------------------------Bem vindo-------------------------------------------- */
+main #bemVindo{
+    left: 0px;
+    top: 575px;
+    padding-top: 87px;
+    padding-bottom: 107px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+main #bemVindo #bemVindo-boasvindas {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140.69%;
+    color: var(--cor-text-azul);
+}
+
+main #bemVindo #bemVindo-ofertas {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 132.19%;
+    padding-top: 20px;
+    color: var(--cor-text-azul);
+}
+
+main #bemVindo #bemVindo-boasvindas h3{
+    color: var(--cor-principal);
+}
+/* -------------------------------Nossos benefícios--------------------------------- */
+main #beneficios {
+    top: 925px;
+    padding-top: 42px;
+    padding-bottom: 62px;
+
+    background-color: var(--cor-azul-claro);
+}
+
+main #beneficios #beneficios-nossosBeneficios {
+   text-align: center;
+}
+
+main #beneficios #beneficios-nossosBeneficios h3{
+    height: 27px;
+    left: 349px;
+    top: 41px;
+    padding-top: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    flex-grow: 1000;
+    color: var(--cor-principal);
+}
+
+main #beneficios #beneficios-nossosBeneficios p{
+    height: 43px;
+    left: 349px;
+    top: 98px;
+    padding-top: 30px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: var(--cor-text-azul);
+}
+
+main #beneficios #beneficios-servicos{
+    padding-top: 53px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+main #beneficios #beneficios-servicos h4{
+    left: 481px;
+    top: 349px;
+    padding-top: 35px;
+    flex-shrink: 2;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: var(--cor-principal);
+    
+}
+/* ------------------------------form--------------------------------------------------- */
+main #form {
+    left: 0px;
+    top: 1393px;
+    padding-top: 50px;
+    background-color: var(--cor-branca);
+}
+
+main #form #form-texto h3{
+    height: 48px;
+    left: 406px;
+    top: 56px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: var(--cor-text-azul);
+    }
+
+main #form #form-texto p{
+    height: 48px;
+    left: 386px;
+    top: 104px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--cor-text-azul);
+
+    text-align: center;
+}
+
+main #form #form-formulario, #login-form #form-log {
+    font-family: 'Roboto';
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+main #form #form-formulario input, button{
+    display: block;
+    outline: unset;
+    margin: 10px;
+    padding: 16px;
+    width: 380px;
+    border: 1px solid var(--cor-text-azul);
+    border-radius: 20px;
+}
+
+main #form #form-formulario {
+    background-image: url(../image/dog.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main #form #form-formulario button:hover{
+    background-color: var(--cor-principal);
+    padding: 16px;
+    color: var(--cor-branca);
+    font-weight: 900;
+    cursor: pointer;
+}
+/* ---------------------------------footer-------------------------------------------------------------- */
+#rodape{
+    background-color: var(--cor-topo);
+    text-align: center;
+}
+
+/* ---------------------------------------Login--------------------------------------------------- */
+main{
+    height: 841px;
+}
+
+header nav #login{
+    padding: 5px;
+    width: 80px;
+    border: none;
+    margin: none;
+    background-color: var(--cor-principal);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: var(--cor-branca);
+}
+
+header nav #login:hover{
+    padding: 10px;
+    width: 90px;
+}
+
+main #login-form #login-texto{
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: var(--cor-preta);
+    padding-top: 194px;
+    padding-bottom: 99px;
+}
+
+main #login-form #form-log input, main #login-form #retorno-button button, .form-log-button button{
+    display: block;
+    outline: none;
+    margin: 5px;
+    padding: 16px;
+    margin-bottom: 39px;
+    width: 500px;
+    border: none;
+    border-bottom: 1px solid var(--cor-preta);
+    border-radius: 5px;
+}
+/* configuração de botão */
+main #login-form #retorno-button button, .form-log-button button{
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--cor-principal);
+    color:var(--cor-azul-claro);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+}
+
+main #login-form #retorno-button{
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+}
+main #login-form #retorno-button button:hover, .form-log-button button:hover{
+    padding: 15px;
+    color: var(--cor-branca);
+    border-radius: 100px;
+    font-size: 22px;
+    cursor: pointer;
+}

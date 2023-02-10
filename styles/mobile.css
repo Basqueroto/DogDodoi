@@ -1,0 +1,23 @@
+/* media query */
+@media (max-width:990px){
+	main #bemVindo {
+        display: block;
+    }
+}
+@media (max-width:953px){
+    main #form #form-formulario{
+        background-image: none;
+    }
+}
+@media (max-width: 600px){
+    main #beneficios #beneficios-servicos{
+        display: block;
+    }
+}
+/* ------------------------------------------Login--------------------------------------------- */
+
+@media (max-width: 516px){
+    main #login-form #form-log input, main #login-form #button-retorno button, .form-log-button button{
+        width: 300px;
+    }
+}
