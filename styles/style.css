@@ -359,13 +359,109 @@ main #login-form #retorno-button button:hover, .form-log-button button:hover{
     cursor: pointer;
 }
 /* -----------------------------------------Dashboard--------------------------------------------- */
-main #dash-menu{
-    position: absolute;
+#header {
+    position: relative;
+}
+main{
+    height: calc(100vh - 73px);
+}
+
+main #dash-menu #dash-menu-button button{
+    width: 288px;
+    height: 54px;
+    border-radius: 20px;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+}
+
+main  #dash-board{
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 73px;
+    background-color: black; 
+    padding: 20px;
+    align-items: flex-start; */
+
+}
+
+main  #dash-board div {
+    width: calc(100% - 30px);
+    margin: 15px;
+}
+
+main  #dash-board #dash-board-cad-client{
+    background-color: #EA1C81;
+    height: 161px;
+}
+
+main  #dash-board #dash-board-cad-user{
+    background-color: antiquewhite;
+    width: 440px;
+    height: 161px;
+}
+
+main  #dash-board #dash-board-cad-consult{
+    background-color: aqua;
+    width: 440px;
+    height: 161px;
+}
+
+main  #dash-board #dash-board-cad-cancel{
+    background-color: bisque;
+    width: 440px;
+    height: 161px;
+}
+
+/* 
+main
+
+
+
+
+AGORA VAI
+
+
+
+
+
+*/
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100vh;
+}
+
+.menu {
     width: 321px;
-    height: 726px;
-    left: 0px;
-    top: 73px;
+    height: 100vh;
     background-color: var(--cor-topo);
 }
 
-main #dash-menu .dash-board-button-class
+.menu a{
+        width: 288px;
+    height: 54px;
+    border-radius: 20px;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+} 
+
+.dashboard .dash {
+    background-color: rgb(255, 255, 255);
+}
+
+.dashboard .dash div {
+    background-color: rgb(255, 255, 255);
+    width: calc(48% - 40px);
+    display: inline-block;
+    margin: 20px;
+    padding: 30px;
+    color: wheat;
+}
+
+    main .dashboard .menu{
+        padding-left: 100px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-right: 12px     ;
+    }
